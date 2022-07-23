@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title> </title>
+
+</head>
+<style>
+
+</style>
+<script>
+
+
+    function add() {
+        const a = parseInt(txtA.value);
+        const b = parseInt(txtB.value);
+        txtAns.value = a + b;
+
+
+        alert(txtAns.value);
+    }
+
+
+    function sub() {
+
+        const a = parseInt(txtA.value);
+        const b = parseInt(txtB.value);
+        txtAns.value = a - b;
+
+        alert(txtAns.value);
+
+    }
+
+    function mul() {
+
+        const a = parseInt(txtA.value);
+        const b = parseInt(txtB.value);
+        txtAns.value = a * b;
+
+        alert(txtAns.value);
+
+    }
+    function div() {
+
+        const a = parseInt(txtA.value);
+        const b = parseInt(txtB.value);
+        txtAns.value = a / b;
+
+        alert(txtAns.value);
+
+    }
+    function area() {
+
+        const r = parseInt(txtc.value);
+        txtAns.value = 22 / 7 * r * r;
+
+
+        alert(txtAns.value);
+    }
+
+
+</script>
+
+<body>
+    enter first num: <input type="text" value="0" width="200px" id="txtA" /><br>
+    enter second num:<input type="text" value="0" width="200px" id="txtB" /><br>
+    Ans: <input type="text" value="0" width="200px" id="txtAns" style="color:blue" ; readonly />
+    <br><br>
+    <div>
+        <input type="button" id="bt1" onclick=add() value="+" style="background-color: bisque;" />
+        <input type="button" id="bt1" onclick=sub() value="-" style="background-color: rgb(255, 196, 223);" />
+        <input type="button" id="bt1" onclick=mul() value="*" style="background-color: rgb(196, 255, 198);" />
+        <input type="button" id="bt1" onclick=div() value="/" style="background-color: rgb(156, 32, 218);" />
+        enter radius: <input type="text" value="0" width="200px" id="txtc" /><br>
+        <input type="button" id="bt1" onclick=area() value="Area" style="background-color: rgb(108, 163, 14);" />
+
+    </div>
+</body>
+
+</html>
